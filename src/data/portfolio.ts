@@ -38,6 +38,8 @@ export const sections: Section[] = [
         youtubeId: "C7fVF3xP7kw",
         customThumbnail: "/ramadan-thumb.jpg",
       },
+            { id: "6", name: "IMG_1013", youtubeId: "s2iWSCyzgBg" },
+
     ],
   },
   {
@@ -51,7 +53,6 @@ export const sections: Section[] = [
       { id: "2", name: "IMG_0238", youtubeId: "LPWCkpb23p0" },
       { id: "3", name: "IMG_4039", youtubeId: "SElAGcdS3iw" },
       { id: "5", name: "IMG_5852", youtubeId: "Xp3OQulpCNQ" },
-      { id: "6", name: "IMG_1013", youtubeId: "s2iWSCyzgBg" },
       { id: "7", name: "Automotive-1", youtubeId: "fIJnQ8krTIk" },
       { id: "8", name: "Automotive-2", youtubeId: "wFtgrJ9BYZI" },
       { id: "9", name: "Automotive-3", youtubeId: "Kfb6tWwGqM4" },
@@ -90,6 +91,8 @@ export const sections: Section[] = [
     videos: [
       { id: "1", name: "IMG_6823", youtubeId: "Cn0Zy887gt4" },
       { id: "2", name: "Shoes-2", youtubeId: "JBPt_5zYSZQ" },
+            { id: "3", name: "IMG_1011", youtubeId: "RK7p70AbVpk" },
+      { id: "4", name: "IMG_1012", youtubeId: "NRlSBhJqZbQ" },
     ],
   },
   {
@@ -121,8 +124,7 @@ export const sections: Section[] = [
     videos: [
       { id: "1", name: "IMG_0234", youtubeId: "huqRm7bHrfo" },
       { id: "2", name: "IMG_9455", youtubeId: "UxV7NHlddqI" },
-      { id: "3", name: "IMG_1011", youtubeId: "RK7p70AbVpk" },
-      { id: "4", name: "IMG_1012", youtubeId: "NRlSBhJqZbQ" },
+
     ],
   },
   {
