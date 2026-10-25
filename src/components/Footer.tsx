@@ -14,7 +14,7 @@ export default function Footer() {
       <div
         className="aurora-blob animate-float-slow"
         style={{ width: 500, height: 500, background: "#0ea5e9", bottom: "-60%", right: "10%", opacity: 0.15 }}
-      />
+  />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-6 py-16 sm:py-20">
         <motion.div

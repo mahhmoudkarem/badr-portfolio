@@ -140,7 +140,6 @@ export const translations = {
   "photos.prev": { en: "Previous", ar: "السابق" },
   "photos.next": { en: "Next", ar: "التالي" },
 
-
   "sectionCard.viewProject": { en: "View Project", ar: "عرض المشروع" },
 
   "videoCard.failed": {
@@ -150,14 +149,15 @@ export const translations = {
   "videoCard.tryAgain": { en: "Try Again", ar: "حاول مجددًا" },
   "videoCard.comingSoon": { en: "Coming Soon", ar: "قريبًا" },
 
+  "cat.Drone": { en: "Drone", ar: "الدرون" },
   "cat.Automotive": { en: "Automotive", ar: "السيارات" },
   "cat.Fashion": { en: "Fashion", ar: "الموضة" },
   "cat.Food & Beverage": { en: "Food & Beverage", ar: "الطعام والمشروبات" },
+  "cat.Food & Retail": { en: "Food & Retail", ar: "الطعام والتجزئة" },
   "cat.Events": { en: "Events", ar: "الفعاليات" },
   "cat.Interior Design": { en: "Interior Design", ar: "التصميم الداخلي" },
   "cat.On-Camera": { en: "On-Camera", ar: "أمام الكاميرا" },
   "cat.Shoes": { en: "Shoes", ar: "الأحذية" },
-  "cat.Ramadan": { en: "Ramadan", ar: "رمضان" },
 } as const;
 
 export type TranslationKey = keyof typeof translations;
@@ -176,6 +176,14 @@ export interface SectionI18n {
 
 export const sectionsI18n: Record<number, SectionI18n> = {
   1: {
+    title: { en: "Drone", ar: "الدرون" },
+    category: { en: "Aerial Cinematography", ar: "تصوير جوي سينمائي" },
+    description: {
+      en: "Breathtaking drone footage that captures cars and landscapes from above.",
+      ar: "لقطات درون مذهلة تلتقط السيارات والمناظر الطبيعية من الأعلى.",
+    },
+  },
+  2: {
     title: { en: "Automotive", ar: "السيارات" },
     category: { en: "AI Cinematic Films", ar: "أفلام سينمائية بالذكاء الاصطناعي" },
     description: {
@@ -183,7 +191,7 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "أفلام سينمائية للسيارات مدعومة بالذكاء الاصطناعي تدفع حدود السرد البصري.",
     },
   },
-  2: {
+  3: {
     title: { en: "On-Camera", ar: "أمام الكاميرا" },
     category: { en: "My Content", ar: "محتواي الخاص" },
     description: {
@@ -191,7 +199,7 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "محتوى شخصي أمام الكاميرا يعرض تنوعًا في المهارات أمام العدسة.",
     },
   },
-  3: {
+  4: {
     title: { en: "Food & Beverage", ar: "الطعام والمشروبات" },
     category: { en: "Cinematic Food Films", ar: "أفلام طعام سينمائية" },
     description: {
@@ -199,7 +207,7 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "أفلام طعام سينمائية شهية تُحيي النكهات من خلال العدسة.",
     },
   },
-  4: {
+  5: {
     title: { en: "Shoes", ar: "الأحذية" },
     category: { en: "Speed Ramp Commercial", ar: "إعلان سبيد رامب" },
     description: {
@@ -207,7 +215,7 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "إعلانات ديناميكية بتقنية سبيد رامب لعلامات الأحذية تلتقط الحركة والطاقة.",
     },
   },
-  5: {
+  6: {
     title: { en: "Food & Retail", ar: "الطعام والتجزئة" },
     category: { en: "Supermarket", ar: "سوبر ماركت" },
     description: {
@@ -215,7 +223,7 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "إنتاجات سوبر ماركت تجارية تلتقط جوهر التسوق اليومي.",
     },
   },
-  6: {
+  7: {
     title: { en: "Events", ar: "الفعاليات" },
     category: { en: "School Graduation", ar: "تخرج المدارس" },
     description: {
@@ -223,7 +231,7 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "التقاط سحر اللحظات المصيرية عبر تغطية سينمائية للفعاليات.",
     },
   },
-  7: {
+  8: {
     title: { en: "Fashion", ar: "الموضة" },
     category: { en: "Studio Campaigns", ar: "حملات استوديو" },
     description: {
@@ -231,20 +239,12 @@ export const sectionsI18n: Record<number, SectionI18n> = {
       ar: "حملات أزياء راقية في الاستوديو تحدد الاتجاهات وترتقي بالعلامات.",
     },
   },
-  8: {
+  9: {
     title: { en: "Interior Design", ar: "التصميم الداخلي" },
     category: { en: "AI Before & After", ar: "قبل وبعد بالذكاء الاصطناعي" },
     description: {
       en: "Stunning AI-driven before and after transformations for interior design projects.",
       ar: "تحولات مذهلة قبل وبعد مدعومة بالذكاء الاصطناعي لمشاريع التصميم الداخلي.",
-    },
-  },
-  9: {
-    title: { en: "Ramadan", ar: "رمضان" },
-    category: { en: "Full Production", ar: "إنتاج كامل" },
-    description: {
-      en: "A complete Ramadan production — a cinematic journey of faith, community, and storytelling.",
-      ar: "إنتاج رمضاني متكامل — رحلة سينمائية في الإيمان والمجتمع والسرد القصصي.",
     },
   },
 };

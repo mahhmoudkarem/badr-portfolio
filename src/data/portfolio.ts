@@ -1,7 +1,8 @@
 export interface Video {
   id: string;
   name: string;
-  youtubeId: string;
+  youtubeId?: string;
+  videoSrc?: string;
   thumbnailFrame?: "0" | "1" | "2" | "3";
   customThumbnail?: string;
 }
@@ -25,6 +26,22 @@ export const socialLinks = {
 export const sections: Section[] = [
   {
     id: 1,
+    title: "Drone",
+    category: "Aerial Cinematography",
+    description: "Breathtaking drone footage that captures cars and landscapes from above.",
+    coverVideo: "ubG4XRRRNpY",
+    videos: [
+      { id: "1", name: "alraqi-cars-drons", youtubeId: "ubG4XRRRNpY" },
+      {
+        id: "2",
+        name: "IMG_4804",
+        youtubeId: "C7fVF3xP7kw",
+        customThumbnail: "/ramadan-thumb.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Automotive",
     category: "AI Cinematic Films",
     description: "AI-powered cinematic automotive films that push the boundaries of visual storytelling.",
@@ -35,10 +52,13 @@ export const sections: Section[] = [
       { id: "3", name: "IMG_4039", youtubeId: "SElAGcdS3iw" },
       { id: "5", name: "IMG_5852", youtubeId: "Xp3OQulpCNQ" },
       { id: "6", name: "IMG_1013", youtubeId: "s2iWSCyzgBg" },
+      { id: "7", name: "Automotive-1", youtubeId: "fIJnQ8krTIk" },
+      { id: "8", name: "Automotive-2", youtubeId: "wFtgrJ9BYZI" },
+      { id: "9", name: "Automotive-3", youtubeId: "Kfb6tWwGqM4" },
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "On-Camera",
     category: "My Content",
     description: "Personal on-camera content showcasing versatility in front of the lens.",
@@ -50,7 +70,7 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Food & Beverage",
     category: "Cinematic Food Films",
     description: "Mouth-watering cinematic food films that bring flavors to life through the lens.",
@@ -62,17 +82,18 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Shoes",
     category: "Speed Ramp Commercial",
     description: "Dynamic speed ramp commercials for footwear brands, capturing motion and energy.",
     coverVideo: "Cn0Zy887gt4",
     videos: [
       { id: "1", name: "IMG_6823", youtubeId: "Cn0Zy887gt4" },
+      { id: "2", name: "Shoes-2", youtubeId: "JBPt_5zYSZQ" },
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Food & Retail",
     category: "Supermarket",
     description: "Commercial supermarket productions capturing the essence of everyday retail.",
@@ -82,7 +103,7 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Events",
     category: "School Graduation",
     description: "Capturing the magic of milestone moments through cinematic event coverage.",
@@ -92,7 +113,7 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Fashion",
     category: "Studio Campaigns",
     description: "High-end fashion studio campaigns that define trends and elevate brands.",
@@ -105,23 +126,15 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Interior Design",
     category: "AI Before & After",
     description: "Stunning AI-driven before and after transformations for interior design projects.",
     coverVideo: "wcj8TjtkZMo",
     videos: [
       { id: "1", name: "IMG_0216", youtubeId: "wcj8TjtkZMo" },
-    ],
-  },
-  {
-    id: 9,
-    title: "Ramadan",
-    category: "Full Production",
-    description: "A complete Ramadan production — a cinematic journey of faith, community, and storytelling.",
-    coverVideo: "C7fVF3xP7kw",
-    videos: [
-      { id: "1", name: "IMG_4804", youtubeId: "C7fVF3xP7kw", customThumbnail: "/ramadan-thumb.jpg" },
+      { id: "2", name: "Interior Design-1", youtubeId: "5UvNlBKaNSM" },
+      { id: "3", name: "Interior Design-2", youtubeId: "xfpJDt14k4Q" },
     ],
   },
 ];
