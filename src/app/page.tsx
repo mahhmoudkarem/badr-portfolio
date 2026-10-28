@@ -19,9 +19,11 @@ import Link from "next/link";
 /* Constants & Data
 /* ------------------------------------------------------------------ */
 
-const FEATURED_SECTION_IDS: readonly number[] = [1, 3, 7, 8, 10];
+// Drone, Automotive, Food & Beverage, Fashion, Interior Design
+const FEATURED_SECTION_IDS: readonly number[] = [1, 2, 4, 8, 9];
 
 const MARQUEE_ITEMS = [
+  "Drone",
   "Automotive",
   "Fashion",
   "Food & Beverage",
@@ -30,7 +32,6 @@ const MARQUEE_ITEMS = [
   "Hotels",
   "On-Camera",
   "Shoes",
-  "Ramadan",
 ] as const;
 
 const SERVICES = [
@@ -95,9 +96,10 @@ type CollageConfig = {
   delay: number;
 };
 
+// sectionIndex = مكان القسم في array الـ sections (يبدأ من 0)
 const COLLAGE_CONFIG: CollageConfig[] = [
   {
-    sectionIndex: 0,
+    sectionIndex: 1, // Automotive
     label: "Automotive",
     positionClassName: "left-3 top-6 lg:left-0 lg:top-8",
     sizeClassName: "w-40 h-60 sm:w-52 sm:h-72 lg:w-72 lg:h-[480px]",
@@ -105,7 +107,7 @@ const COLLAGE_CONFIG: CollageConfig[] = [
     delay: 0,
   },
   {
-    sectionIndex: 6,
+    sectionIndex: 7, // Fashion
     label: "Fashion",
     positionClassName: "right-4 top-0 lg:right-0 lg:top-0",
     sizeClassName: "w-36 h-52 sm:w-44 sm:h-64 lg:w-56 lg:h-80",
@@ -113,7 +115,7 @@ const COLLAGE_CONFIG: CollageConfig[] = [
     delay: 0.15,
   },
   {
-    sectionIndex: 2,
+    sectionIndex: 3, // Food & Beverage
     label: "Food & Beverage",
     positionClassName: "left-6 bottom-0 lg:right-6 lg:left-auto lg:bottom-10",
     sizeClassName: "w-36 h-52 sm:w-44 sm:h-64 lg:w-52 lg:h-72",
@@ -121,7 +123,7 @@ const COLLAGE_CONFIG: CollageConfig[] = [
     delay: 0.3,
   },
   {
-    sectionIndex: 7,
+    sectionIndex: 8, // Interior Design
     label: "Interior Design",
     positionClassName: "right-6 bottom-4 lg:left-6 lg:right-auto lg:bottom-0",
     sizeClassName: "w-32 h-44 sm:w-40 sm:h-56 lg:w-48 lg:h-64",
@@ -560,14 +562,14 @@ export default function Home() {
                     href="/portfolio"
                     className={`btn-primary px-8 py-4 text-sm tracking-[0.2em] uppercase font-medium rounded-full w-full sm:w-auto text-center font-mono ${focusRing}`}
                   >
-                    <span>{t("hero.viewWork")}</span>
+                    <span>{t("hero.viewVideos")}</span>
                   </Link>
 
                   <Link
-                    href="/contact"
+                    href="/photos"
                     className={`btn-ghost px-8 py-4 text-sm tracking-[0.2em] uppercase rounded-full w-full sm:w-auto text-center font-mono ${focusRing}`}
                   >
-                    {t("hero.getInTouch")}
+                    {t("hero.viewPhotos")}
                   </Link>
                 </motion.div>
               </div>

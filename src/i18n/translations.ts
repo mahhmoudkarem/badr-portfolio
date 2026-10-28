@@ -12,8 +12,8 @@ export const translations = {
     en: "Transforming visions into cinematic realities through the art of light, motion, and storytelling.",
     ar: "أحوّل الرؤى إلى واقع سينمائي عبر فن الضوء والحركة وسرد القصص.",
   },
-  "hero.viewWork": { en: "View Work", ar: "عرض الأعمال" },
-  "hero.getInTouch": { en: "Get in Touch", ar: "تواصل معي" },
+   "hero.viewVideos": { en: "View Videos", ar: "عرض الفيديوهات" },
+  "hero.viewPhotos": { en: "View Photos", ar: "عرض الصور" },
   "hero.scroll": { en: "Scroll", ar: "مرّر" },
 
   "stats.projects": { en: "Projects", ar: "مشاريع" },
